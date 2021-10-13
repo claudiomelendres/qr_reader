@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'QR REader',
-        initialRoute: 'caratula',
+        initialRoute: 'home',
         routes: {
           'caratula': (_) => CaratulaPage(),
           'home': (_) => HomePage(),
