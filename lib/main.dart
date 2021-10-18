@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:qr_reader/pages/caratula_page.dart';
 import 'package:qr_reader/pages/home_page.dart';
+import 'package:qr_reader/pages/home_screen.dart';
 import 'package:qr_reader/pages/mapa_page.dart';
 import 'package:qr_reader/providers/scan_list_provider.dart';
 import 'package:qr_reader/providers/ui_provider.dart';
@@ -19,11 +20,12 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'QR REader',
-        initialRoute: 'home',
+        initialRoute: 'caratula',
         routes: {
           'caratula': (_) => CaratulaPage(),
           'home': (_) => HomePage(),
           'mapa': (_) => MapaPage(),
+          'screen': (_) => HomeScreen()
         },
         theme: ThemeData(
             primaryColor: Colors.deepPurple,
